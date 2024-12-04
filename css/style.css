@@ -81,19 +81,18 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
-.margin-bot-120 {
-  margin-bottom: 120px;
-}
 /* #endregion */
 
 /* #region================= HEADER =================*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav-flex {
@@ -103,7 +102,7 @@ a {
 }
 
 .nav-flex .logo {
-  margin-right: 72px;
+  margin-right: 76px;
 }
 
 .list-nav {
@@ -111,6 +110,10 @@ a {
   justify-content: flex-start;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.link-nav {
+  padding: 24px 0;
 }
 
 .nav-item:not(:last-child),
@@ -179,12 +182,11 @@ a {
 .hero {
   background-color: #2e2f42;
   /* height: 600px; */
-  padding-top: 180px;
-  padding-bottom: 196px;
+  padding: 188px 0;
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 
@@ -214,7 +216,9 @@ a {
   border-radius: 4px;
   padding-top: 16px;
   padding-bottom: 16px;
-  width: 169px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
@@ -240,9 +244,13 @@ a {
   overflow: hidden;
 }
 
+.features {
+  padding: 120px 0;
+}
+
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .features-item {
@@ -269,12 +277,12 @@ a {
 .team-list {
   display: flex;
 
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .team-item {
   flex-basis: calc((100% - 72px) / 4);
-  padding-bottom: 32px;
+  border-radius: 0 0 4px 4px;
 
   letter-spacing: 0.02em;
   text-align: center;
@@ -286,7 +294,7 @@ a {
 
 .team-card-content {
   text-align: center;
-  margin-top: 32px;
+  padding: 32px 0;
 }
 
 .team-card-content .item-title {
@@ -295,6 +303,10 @@ a {
 /* #endregion */
 
 /* #region================= OUR PORTFOLIO 4 =================*/
+
+.portfolio {
+  padding: 120px 0;
+}
 
 .portfolio .post-title {
   margin-bottom: 72px;
@@ -313,9 +325,12 @@ a {
 
 .portfolio-card-content {
   padding: 32px 16px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-card-content .item-title {
+  margin-bottom: 8px;
 }
 
 /* #endregion */
@@ -324,11 +339,12 @@ a {
 
 footer {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 
-.text-position {
-  width: 264px;
+.text-position .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 footer .part-of-logo {
@@ -337,5 +353,6 @@ footer .part-of-logo {
 
 .footer-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
 /* #endregion */
